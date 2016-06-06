@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-abr-2016 17:10:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="meetme" name="hibernate.User" optimistic-lock="version" table="user">
+    <id name="telf" type="string">
+      <column name="telf"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nick" type="string">
+      <column length="20" name="nick"/>
+    </property>
+    <property name="token" type="string">
+      <column length="250" name="token" not-null="true"/>
+    </property>
+    <property name="descripcion" type="string">
+      <column length="100" name="descripcion"/>
+    </property>
+    <property name="ultimaconexion" type="string">
+      <column length="18" name="ultimaconexion"/>
+    </property>
+    <property name="verconexion" type="string">
+      <column length="15" name="verconexion"/>
+    </property>
+    <property name="privacidad" type="string">
+      <column length="15" name="privacidad"/>
+    </property>
+    <property name="facebook" type="string">
+      <column length="50" name="facebook"/>
+    </property>
+    <property name="twitter" type="string">
+      <column length="50" name="twitter"/>
+    </property>
+    <property name="email" type="string">
+      <column length="75" name="email"/>
+    </property>
+    <property name="nacimiento" type="string">
+      <column length="10" name="nacimiento"/>
+    </property>
+     <property name="nacionalidad" type="string">
+      <column length="25" name="nacionalidad"/>
+    </property>
+  </class>
+</hibernate-mapping>
